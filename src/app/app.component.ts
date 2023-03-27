@@ -8,12 +8,13 @@ import { CommonService } from './services/common.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public title: string = 'audio-player';
-  public selectedSong: Song = {} as Song;
+  public title: string = 'AUDIO PLAYER';
+
+  public songsList: Song[] = [];
 
   constructor(private service: CommonService) { }
 
   ngOnInit(): void {
-    this.selectedSong = this.service.getSong();
+    this.songsList = this.service.getSongsList();
   }
 }
