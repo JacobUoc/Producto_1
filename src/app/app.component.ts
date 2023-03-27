@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Song } from './models/common.model';
+import { CommonService } from './services/common.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'audio-player';
+  public title: string = 'AUDIO PLAYER';
+
+  public songsList: Song[] = [];
+
+  constructor(private service: CommonService) { }
+
+  ngOnInit(): void {
+    this.songsList = this.service.getSongsList();
+  }
 }
