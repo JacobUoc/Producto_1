@@ -14,7 +14,8 @@ export class CommonService {
       album: 'Elegants',
       genre: 'Funky',
       label: 'Label',
-      country: 'EEUU'
+      country: 'EEUU',
+      showDetails: false
     },
     {
       id: 2,
@@ -24,24 +25,45 @@ export class CommonService {
       album: 'Liverpool concert',
       genre: 'Pop',
       label: 'Label',
-      country: 'EEUU'
+      country: 'EEUU',
+      showDetails: false
     },
     {
       id: 3,
-      title: 'Dua Lipa-Love Again',
+      title: 'Love Again',
       author: 'Dua Lipa',
       year: 1937,
       album: 'The Three Degrees',
       genre: 'Funk',
       label: 'Label',
-      country: 'EEUU'
+      country: 'EEUU',
+      showDetails: false
+    },
+    {
+      id: 4,
+      title: 'Boys Will Be Boys',
+      author: 'Dua Lipa',
+      year: 2020,
+      album: 'Future Nostalgia',
+      genre: 'Funk',
+      label: 'Label',
+      country: 'EEUU',
+      showDetails: false
+    },
+    {
+      id: 5,
+      title: 'Pretty Please',
+      author: 'Dua Lipa',
+      year: 2020,
+      album: 'Future Nostalgia',
+      genre: 'Funk',
+      label: 'Label',
+      country: 'EEUU',
+      showDetails: false
     }
   ];
-  constructor() { }
 
-  public getSong(): Song {
-    return this.songsList[0];
-  }
+  constructor() { }
 
   public getSongsList(): Song[] {
     return this.songsList;

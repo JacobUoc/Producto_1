@@ -7,4 +7,5 @@ export interface Song {
     genre: string;
     label: string;
     country: string;
+    showDetails: boolean;
 }

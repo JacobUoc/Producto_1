@@ -1,10 +1,23 @@
-.song-detail {
+.songs-list {
     background-color: #6F7681;
 
     .song-title {
         color: #FF80DF;
         font-size: 16px;
-        font-weight: bold;
+    }
+
+    .song-block {
+        border: #000 solid 1px;
+        border-radius: 10px;
+        padding: 8px;
+        margin: 4px 0;
+    }
+
+    .song-button {
+        color: #000;
+        font-size: 24px;
+        margin: auto 0;
+        text-align: right;
     }
 
     .song-label {

@@ -9,6 +9,6 @@ import {Song} from 'src/app/models/common.model';
 export class SongDetailComponent {
   @Input() song: Song = {} as Song;
 
-  constructor() {}
+  constructor() { }
 }
 
